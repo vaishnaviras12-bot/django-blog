@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from .models import Post
-
+'''
 posts=[
     {
         'author':'Corey Schafer',
@@ -15,6 +15,7 @@ posts=[
         'content':'Second post content',
     }
 ]
+'''
 def home(request):
     context={
         'posts':Post.objects.all()
